@@ -288,6 +288,10 @@
     flex-direction: column;
   }
 
+  .priShareCard {
+    flex: 0 1 auto;
+  }
+
   .moreProducts {
     flex-basis: auto;
   }

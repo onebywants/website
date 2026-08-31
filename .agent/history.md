@@ -104,3 +104,10 @@
 ### src/components/Header/Header.module.css
 
 - 320px 화면에서 로고와 메뉴가 가로로 넘치지 않도록 480px 이하 Header의 로고·메뉴 크기와 간격을 보완했습니다.
+
+## 2026-08-31 20:44
+
+### src/app/page.module.css
+
+- 모바일에서 PriShare 카드가 데스크톱 flex basis를 그대로 사용해 과도하게 길어지던 문제를 수정했습니다.
+- 세로 레이아웃에서는 카드가 콘텐츠 높이만 차지하도록 변경해 불필요한 하단 여백을 제거했습니다.
