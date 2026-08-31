@@ -27,7 +27,6 @@
 }
 
 html {
-  min-width: 320px;
   min-height: 100%;
 }
 
@@ -48,4 +47,17 @@ a {
 
 main {
   flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --content-inline-padding: 1.5rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  :root {
+    --content-inline-padding: 1rem;
+  }
 }

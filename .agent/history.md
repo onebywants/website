@@ -75,3 +75,20 @@
 
 - develop 브랜치 push와 수동 실행에서만 정적 사이트를 빌드해 GitHub Pages에 배포하는 워크플로를 추가했습니다.
 - 공식 Pages artifact 업로드 및 배포 액션을 사용하고, 배포 환경의 base path를 Next.js 빌드에 전달하도록 구성했습니다.
+
+## 2026-08-31 16:17
+
+### src/app/globals.css
+
+- 좁은 화면에서 콘텐츠 좌우 여백이 단계적으로 줄어들도록 공통 컨테이너 변수를 보완했습니다.
+- 고정 최소 viewport 폭을 제거하고 main 영역이 부모 폭보다 커지지 않도록 조정했습니다.
+
+### src/components/Header/Header.module.css
+
+- 768px 이하에서 Header 높이와 로고·메뉴 간격을 축소하도록 반응형 규칙을 추가했습니다.
+- 480px 이하에서도 Products, About, Contact 메뉴가 모두 표시되도록 로고와 메뉴 크기를 조정했습니다.
+
+### src/components/Footer/Footer.module.css
+
+- 768px 이하에서 Footer의 브랜드 정보와 메뉴를 세로로 쌓아 좁은 화면의 가로 넘침을 방지했습니다.
+- 480px 이하에서 Footer 메뉴 간격을 축소했습니다.
