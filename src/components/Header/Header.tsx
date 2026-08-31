@@ -2,6 +2,8 @@ import Link from 'next/link';
 
 import styles from './Header.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 const navigationItems = [
   { href: '/products', label: 'Products' },
   { href: '/about', label: 'About' },
@@ -16,12 +18,12 @@ export function Header() {
           <img
             alt=""
             className={styles.symbol}
-            src="/brand/onebywants-symbol.svg"
+            src={`${basePath}/brand/onebywants-symbol.svg`}
           />
           <img
             alt=""
             className={styles.wordmark}
-            src="/brand/onebywants-wordmark.svg"
+            src={`${basePath}/brand/onebywants-wordmark.svg`}
           />
         </Link>
         <nav aria-label="주요 메뉴">

@@ -59,3 +59,19 @@
 
 - 1296px 최대 콘텐츠 폭과 72px 데스크톱 좌우 여백을 공통 변수로 정의했습니다.
 - 고정 viewport 높이 계산을 제거하고 flex 기반 페이지 셸로 짧은 페이지의 Footer 배치를 안정화했습니다.
+
+## 2026-08-31 15:30
+
+### next.config.ts
+
+- GitHub Pages 배포를 위한 정적 export와 trailing slash 출력을 설정했습니다.
+- GitHub Actions가 제공하는 저장소 base path를 빌드 시 적용하도록 구성해 로컬 기본 경로 동작을 유지했습니다.
+
+### src/components/Header/Header.tsx
+
+- GitHub Pages 하위 경로에서도 로고 SVG가 정상 로드되도록 public asset 경로에 base path를 반영했습니다.
+
+### .github/workflows/deploy-pages.yml
+
+- develop 브랜치 push와 수동 실행에서만 정적 사이트를 빌드해 GitHub Pages에 배포하는 워크플로를 추가했습니다.
+- 공식 Pages artifact 업로드 및 배포 액션을 사용하고, 배포 환경의 base path를 Next.js 빌드에 전달하도록 구성했습니다.
