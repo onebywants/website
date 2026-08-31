@@ -1,0 +1,12 @@
+.footer {
+  border-top: 1px solid #e4e8f0;
+  background: var(--color-surface);
+}
+
+.inner {
+  width: min(100% - 2rem, var(--content-max-width));
+  padding: var(--space-3) 0;
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
