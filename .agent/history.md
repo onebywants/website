@@ -92,3 +92,15 @@
 
 - 768px 이하에서 Footer의 브랜드 정보와 메뉴를 세로로 쌓아 좁은 화면의 가로 넘침을 방지했습니다.
 - 480px 이하에서 Footer 메뉴 간격을 축소했습니다.
+
+## 2026-08-31 20:24
+
+### src/app/page.tsx, src/app/page.module.css
+
+- Home placeholder를 Hero, Products, How we build 섹션으로 교체하고 승인된 Figma의 데스크톱 구성과 공식 브랜드 에셋을 반영했습니다.
+- PriShare 소개와 상세 페이지 링크를 Products 영역에만 추가하고, About 링크 및 GitHub Pages base path를 지원했습니다.
+- 좁은 화면에서 섹션과 제품·원칙 항목이 자연스럽게 쌓이도록 반응형 레이아웃을 추가했습니다.
+
+### src/components/Header/Header.module.css
+
+- 320px 화면에서 로고와 메뉴가 가로로 넘치지 않도록 480px 이하 Header의 로고·메뉴 크기와 간격을 보완했습니다.
