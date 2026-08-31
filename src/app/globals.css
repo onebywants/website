@@ -6,7 +6,15 @@
   --color-surface: #f6f8fc;
   --color-text: #0a163b;
   --color-text-muted: #536078;
-  --content-max-width: 72rem;
+  --color-navigation: #575e6e;
+  --color-footer-muted: #b2bacc;
+  --color-footer-link: #d1d6e3;
+  --content-max-width: 81rem;
+  --content-inline-padding: 4.5rem;
+  --content-width: min(
+    calc(100% - (var(--content-inline-padding) * 2)),
+    var(--content-max-width)
+  );
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
@@ -20,9 +28,13 @@
 
 html {
   min-width: 320px;
+  min-height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   background: var(--color-background);
   color: var(--color-text);
@@ -35,5 +47,5 @@ a {
 }
 
 main {
-  min-height: calc(100vh - 9rem);
+  flex: 1;
 }

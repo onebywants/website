@@ -38,3 +38,24 @@
 ### .gitignore
 
 - 기존 제외 규칙의 잘못된 접두사를 정리해 Next.js 생성 파일과 로컬 설정이 정상적으로 제외되도록 수정했습니다.
+
+## 2026-08-31 15:20
+
+### public/brand/onebywants-symbol.svg, public/brand/onebywants-wordmark.svg
+
+- Brand Figma에서 추출한 공식 OneByWants 심볼과 워드마크 SVG 원본을 추가했습니다.
+
+### src/components/Header/Header.tsx, src/components/Header/Header.module.css
+
+- 공식 SVG 로고를 사용하도록 변경하고 홈 링크를 연결했습니다.
+- Figma 기준의 데스크톱 높이, 콘텐츠 여백, 로고 크기 및 메뉴 타이포그래피·간격을 반영했습니다.
+
+### src/components/Footer/Footer.tsx, src/components/Footer/Footer.module.css
+
+- Navy 배경의 공통 Footer에 슬로건, 저작권 및 기존 경로 기반 메뉴를 추가했습니다.
+- Figma 기준의 높이, 콘텐츠 정렬, 색상 및 텍스트 계층을 반영했습니다.
+
+### src/app/globals.css, src/app/page.module.css
+
+- 1296px 최대 콘텐츠 폭과 72px 데스크톱 좌우 여백을 공통 변수로 정의했습니다.
+- 고정 viewport 높이 계산을 제거하고 flex 기반 페이지 셸로 짧은 페이지의 Footer 배치를 안정화했습니다.

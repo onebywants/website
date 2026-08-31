@@ -12,8 +12,17 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link className={styles.brand} href="/">
-          OneByWants
+        <Link aria-label="OneByWants 홈" className={styles.brand} href="/">
+          <img
+            alt=""
+            className={styles.symbol}
+            src="/brand/onebywants-symbol.svg"
+          />
+          <img
+            alt=""
+            className={styles.wordmark}
+            src="/brand/onebywants-wordmark.svg"
+          />
         </Link>
         <nav aria-label="주요 메뉴">
           <ul className={styles.navigation}>

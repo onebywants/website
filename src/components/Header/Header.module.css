@@ -1,5 +1,4 @@
 .header {
-  border-bottom: 1px solid #e4e8f0;
   background: var(--color-background);
 }
 
@@ -7,23 +6,45 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(100% - 2rem, var(--content-max-width));
-  min-height: 4.5rem;
+  width: var(--content-width);
+  min-height: 5.75rem;
   margin: 0 auto;
 }
 
 .brand {
-  color: var(--color-navy);
-  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 13.125rem;
+  height: 2.69375rem;
+}
+
+.symbol,
+.wordmark {
+  position: absolute;
+  display: block;
+}
+
+.symbol {
+  inset: 0 auto auto 0;
+  width: 2.74375rem;
+  height: 2.69375rem;
+}
+
+.wordmark {
+  top: 0.746875rem;
+  right: 0;
+  width: 9.4125rem;
+  height: 1.52875rem;
 }
 
 .navigation {
   display: flex;
-  gap: var(--space-3);
+  gap: 2rem;
   padding: 0;
   margin: 0;
-  color: var(--color-text-muted);
+  color: var(--color-navigation);
   font-size: 0.875rem;
+  font-weight: 500;
   list-style: none;
 }
 
