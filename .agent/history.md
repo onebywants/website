@@ -111,3 +111,20 @@
 
 - 모바일에서 PriShare 카드가 데스크톱 flex basis를 그대로 사용해 과도하게 길어지던 문제를 수정했습니다.
 - 세로 레이아웃에서는 카드가 콘텐츠 높이만 차지하도록 변경해 불필요한 하단 여백을 제거했습니다.
+
+## 2026-08-31 21:06
+
+### src/app/products/page.tsx, src/app/products/page.module.css
+
+- Products placeholder를 Figma 기준의 소개 영역, 단일 PriShare 제품 행, 향후 제품 안내 영역으로 교체했습니다.
+- PriShare 상세 경로 링크와 데스크톱·좁은 화면 반응형 레이아웃을 추가했습니다.
+
+### src/app/about/page.tsx, src/app/about/page.module.css
+
+- OneByWants의 방향성, 이름의 의미, 세 가지 가치 영역을 승인된 Figma 카피와 계층으로 구현했습니다.
+- 가치 카드의 데스크톱 폭·간격과 모바일 단일 열 전환을 반영했습니다.
+
+### src/app/contact/page.tsx, src/app/contact/page.module.css
+
+- 이메일 우선 연락처 카드와 제품 지원 안내 영역을 구현했습니다.
+- hello@onebywants.com mailto 링크 및 좁은 화면에서의 단일 열 배치를 추가했습니다.

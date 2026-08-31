@@ -1,0 +1,179 @@
+.mainSection,
+.support,
+.footerSpacer {
+  background: #f8f8f4;
+}
+
+.mainInner,
+.supportInner {
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.mainInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28.75rem;
+  gap: 3rem;
+  min-height: 27.0625rem;
+  padding: 6.875rem 3.5rem 7.5rem 0;
+}
+
+.copy,
+.contactInfo,
+.supportInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.copy {
+  gap: 1.375rem;
+}
+
+.kicker,
+.copy h1,
+.copy > p:last-child,
+.contactInfo p,
+.support h2,
+.support p {
+  margin: 0;
+}
+
+.kicker,
+.emailLabel {
+  color: var(--color-blue);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.copy h1 {
+  color: var(--color-navy);
+  font-size: 4.25rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 5.0625rem;
+}
+
+.copy > p:last-child {
+  max-width: 38.125rem;
+  color: var(--color-navigation);
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+}
+
+.contactInfo {
+  align-self: start;
+  gap: 1rem;
+  min-height: 9.6875rem;
+  padding: 1.375rem 1.75rem;
+  border: 1px solid #e0e1de;
+  font-style: normal;
+}
+
+.emailLabel {
+  font-size: 0.75rem;
+}
+
+.contactInfo a {
+  color: var(--color-navy);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.contactInfo a:hover {
+  color: var(--color-blue);
+}
+
+.contactInfo p:last-child {
+  color: var(--color-navigation);
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+.supportInner {
+  gap: 1rem;
+  min-height: 17.875rem;
+  padding: 4.625rem 0 6.25rem;
+}
+
+.support h2 {
+  color: var(--color-navy);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 2.375rem;
+}
+
+.support p {
+  max-width: 47.5rem;
+  color: var(--color-navigation);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.footerSpacer {
+  height: 11.25rem;
+}
+
+@media (max-width: 48rem) {
+  .mainInner {
+    grid-template-columns: minmax(0, 1fr) 20rem;
+    padding: 5rem 0;
+  }
+
+  .copy h1 {
+    font-size: clamp(3.5rem, 9vw, 4.25rem);
+    line-height: 1.1;
+  }
+
+  .footerSpacer {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .mainInner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contactInfo {
+    width: 100%;
+  }
+
+  .supportInner {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .mainInner {
+    gap: 2.5rem;
+    padding: 3.5rem 0;
+  }
+
+  .copy h1 {
+    font-size: 3rem;
+  }
+
+  .copy > p:last-child,
+  .support p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .contactInfo {
+    padding: 1.5rem;
+  }
+
+  .contactInfo a {
+    font-size: 1.25rem;
+  }
+
+  .support h2 {
+    font-size: 1.75rem;
+  }
+}

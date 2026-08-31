@@ -1,0 +1,179 @@
+.hero,
+.story,
+.values {
+  background: #f8f8f4;
+}
+
+.heroInner,
+.storyInner,
+.valuesInner {
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.375rem;
+  min-height: 32.5625rem;
+  padding: 6.125rem 0 5rem;
+}
+
+.kicker,
+.heroInner > p:last-child,
+.storyCopy h2,
+.storyCopy p,
+.value h2,
+.value p {
+  margin: 0;
+}
+
+.kicker {
+  color: var(--color-blue);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  max-width: 25rem;
+  margin: 0;
+  color: var(--color-navy);
+  font-size: 4.25rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 4.75rem;
+}
+
+.heroInner > p:last-child {
+  max-width: 47.5rem;
+  color: var(--color-navigation);
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+}
+
+.storyInner {
+  display: grid;
+  grid-template-columns: 20.625rem minmax(0, 1fr);
+  gap: 0;
+  min-height: 20.75rem;
+  padding: 5rem 0;
+}
+
+.storyCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  max-width: 50rem;
+}
+
+.storyCopy h2 {
+  color: var(--color-navy);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 3rem;
+}
+
+.storyCopy p {
+  max-width: 47.5rem;
+  color: var(--color-navigation);
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+.valuesInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  min-height: 23.75rem;
+  padding: 5.25rem 0 6.25rem;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 24.75rem));
+  gap: 1.75rem;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  min-height: 9.375rem;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid #e0e1de;
+}
+
+.value h2 {
+  color: var(--color-navy);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: normal;
+}
+
+.value p {
+  color: var(--color-navigation);
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
+@media (max-width: 48rem) {
+  .heroInner {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, 9vw, 4.25rem);
+    line-height: 1.1;
+  }
+
+  .storyInner {
+    grid-template-columns: 13rem minmax(0, 1fr);
+  }
+
+  .valueGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .storyInner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+
+  .valuesInner {
+    padding: 4rem 0;
+  }
+
+  .valueGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 30rem) {
+  .heroInner {
+    padding: 3.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .heroInner > p:last-child,
+  .storyCopy p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .storyCopy h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
