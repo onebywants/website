@@ -128,3 +128,15 @@
 
 - 이메일 우선 연락처 카드와 제품 지원 안내 영역을 구현했습니다.
 - hello@onebywants.com mailto 링크 및 좁은 화면에서의 단일 열 배치를 추가했습니다.
+
+## 2026-08-31 22:09
+
+### public/brand/prishare-symbol.svg, public/brand/prishare-wordmark.svg
+
+- 승인된 PriShare Figma 프레임에서 추출한 공식 심볼과 워드마크 SVG 원본을 추가했습니다.
+
+### src/app/products/prishare/page.tsx, src/app/products/prishare/page.module.css
+
+- PriShare placeholder를 제품 Hero, 기능 카드, 온디바이스 처리 안내 영역으로 교체했습니다.
+- 원본 보존, 민감 정보 탐지·가림, 안전한 사본 생성 및 Coming soon 상태를 실제 제품 범위에 맞춰 안내했습니다.
+- 데스크톱 Figma 레이아웃과 320px부터 768px까지의 반응형 단일 열 전환을 추가했습니다.

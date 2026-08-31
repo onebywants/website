@@ -1,0 +1,294 @@
+.hero,
+.privacy {
+  background: #f8f8f4;
+}
+
+.heroInner,
+.featuresInner,
+.privacyInner {
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 47.5rem 28.125rem;
+  gap: 3.75rem;
+  align-items: center;
+  min-height: 36.25rem;
+  padding: 5.875rem 0 6rem;
+}
+
+.heroCopy,
+.privacyCopy,
+.featuresInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heroCopy {
+  gap: 1.25rem;
+}
+
+.kicker,
+.heroCopy h1,
+.introduction,
+.status,
+.features h2,
+.feature p,
+.feature h3,
+.privacyCopy h2,
+.privacyCopy > p:last-child {
+  margin: 0;
+}
+
+.kicker,
+.featureNumber {
+  color: var(--color-blue);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.heroCopy h1 {
+  max-width: 45rem;
+  color: var(--color-navy);
+  font-size: 3.75rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+}
+
+.introduction {
+  max-width: 43.125rem;
+  color: var(--color-navigation);
+  font-size: 1.1875rem;
+  line-height: 1.9375rem;
+}
+
+.status {
+  padding: 0.8125rem 1.25rem;
+  border-radius: 999px;
+  background: var(--color-navy);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.productVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 24.375rem;
+  border-radius: 1.75rem;
+  background: #101214;
+}
+
+.priShareLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 12.875rem;
+  height: 3.625rem;
+}
+
+.priShareSymbol {
+  width: 3.015rem;
+  height: 3.625rem;
+}
+
+.priShareWordmark {
+  width: 9.11rem;
+  height: 1.77rem;
+}
+
+.features {
+  background: #ffffff;
+}
+
+.featuresInner {
+  gap: 2.125rem;
+  min-height: 36.25rem;
+  padding: 5.25rem 0 5.625rem;
+}
+
+.features h2 {
+  max-width: 48.75rem;
+  color: var(--color-navy);
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1.227;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+  width: 100%;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  min-height: 11.875rem;
+  padding: 1.5rem;
+  border: 1px solid #e0e1de;
+  border-radius: 1.125rem;
+}
+
+.featureNumber {
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+}
+
+.feature h3 {
+  color: var(--color-navy);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: normal;
+}
+
+.feature > p:last-child {
+  color: var(--color-navigation);
+  font-size: 1rem;
+  line-height: 1.5625rem;
+}
+
+.privacyInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 26.25rem;
+  gap: 4.375rem;
+  align-items: center;
+  min-height: 24.625rem;
+  padding: 5.125rem 0;
+}
+
+.privacyCopy {
+  gap: 0.875rem;
+  max-width: 43.125rem;
+}
+
+.privacyCopy h2 {
+  color: var(--color-navy);
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.278;
+}
+
+.privacyCopy > p:last-child {
+  max-width: 40.625rem;
+  color: var(--color-navigation);
+  font-size: 1.0625rem;
+  line-height: 1.647;
+}
+
+.privacyAccent {
+  height: 14.375rem;
+  border-radius: 1.5rem;
+  background: #f2f5fa;
+}
+
+@media (max-width: 64rem) {
+  .heroInner {
+    grid-template-columns: minmax(0, 1fr) 21rem;
+    gap: 2.5rem;
+  }
+
+  .productVisual {
+    height: 20rem;
+  }
+
+  .privacyInner {
+    grid-template-columns: minmax(0, 1fr) 19rem;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .heroInner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(3.5rem, 9vw, 3.75rem);
+    line-height: 1.1;
+  }
+
+  .productVisual {
+    width: min(100%, 28.125rem);
+    height: 20rem;
+  }
+
+  .featuresInner {
+    min-height: auto;
+    padding: 5rem 0;
+  }
+
+  .privacyInner {
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    gap: 2rem;
+    min-height: auto;
+    padding: 4.5rem 0;
+  }
+}
+
+@media (max-width: 40rem) {
+  .featureGrid,
+  .privacyInner {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    min-height: auto;
+  }
+
+  .privacyAccent {
+    width: 100%;
+    height: 11rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .heroInner {
+    gap: 2.5rem;
+    padding: 3.5rem 0;
+  }
+
+  .heroCopy h1 {
+    font-size: 3rem;
+  }
+
+  .introduction,
+  .privacyCopy > p:last-child {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .productVisual {
+    height: 16rem;
+    border-radius: 1.25rem;
+  }
+
+  .priShareLogo {
+    transform: scale(0.82);
+  }
+
+  .featuresInner,
+  .privacyInner {
+    padding: 3.5rem 0;
+  }
+
+  .features h2,
+  .privacyCopy h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
