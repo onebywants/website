@@ -174,3 +174,9 @@
 ### src/app/contact/page.tsx
 
 - Contact 이메일 주소와 mailto 링크를 `support@onebywants.com`으로 변경했습니다.
+
+## 2026-09-11 16:44
+
+### src/app/contact/page.tsx
+
+- Contact 이메일 주소와 mailto 링크를 `onebywants@gmail.com`으로 변경했습니다.
