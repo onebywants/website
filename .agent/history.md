@@ -168,3 +168,9 @@
 ### src/components/Footer/Footer.module.css
 
 - 짧은 페이지에서 Footer 비중이 과도하지 않도록 데스크톱과 모바일 세로 여백을 축소했습니다.
+
+## 2026-09-11 10:12
+
+### src/app/contact/page.tsx
+
+- Contact 이메일 주소와 mailto 링크를 `support@onebywants.com`으로 변경했습니다.

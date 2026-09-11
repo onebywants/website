@@ -13,7 +13,7 @@ export default function ContactPage() {
         </div>
         <address className={styles.contactInfo}>
           <p className={styles.emailLabel}>EMAIL</p>
-          <a href="mailto:hello@onebywants.com">hello@onebywants.com</a>
+          <a href="mailto:support@onebywants.com">support@onebywants.com</a>
           <p>For product questions, partnerships, and general inquiries.</p>
         </address>
       </div>
