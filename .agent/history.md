@@ -140,3 +140,31 @@
 - PriShare placeholder를 제품 Hero, 기능 카드, 온디바이스 처리 안내 영역으로 교체했습니다.
 - 원본 보존, 민감 정보 탐지·가림, 안전한 사본 생성 및 Coming soon 상태를 실제 제품 범위에 맞춰 안내했습니다.
 - 데스크톱 Figma 레이아웃과 320px부터 768px까지의 반응형 단일 열 전환을 추가했습니다.
+
+## 2026-09-11 10:04
+
+### src/app/products/prishare/page.tsx, src/app/products/prishare/page.module.css
+
+- 내용 없는 개인정보 섹션의 연한 사각형을 실제 PriShare 처리 흐름을 설명하는 비스크린샷 시각 요소로 교체했습니다.
+- 기존 로고 자산과 Detect·Hide·Share 설명을 연결해 온디바이스 처리, 안전한 사본 생성, 원본 보존 메시지를 강화했습니다.
+
+### src/app/products/page.tsx, src/app/products/page.module.css
+
+- PriShare 목록에 공식 마크, In development 상태, Privacy·On-device·Android 메타데이터를 추가했습니다.
+- 불필요한 Footer 앞 빈 공간을 제거하고 좁은 화면에서 제품 정보가 가로로 넘치지 않도록 배치를 조정했습니다.
+
+### src/app/contact/page.tsx, src/app/contact/page.module.css
+
+- 연락처와 제품 지원 안내의 세로 여백 및 최소 높이를 줄이고 Footer 앞의 인위적인 빈 공간을 제거했습니다.
+
+### src/app/about/page.tsx, src/app/about/page.module.css
+
+- 작은 일상 문제를 위한 집중형 소프트웨어라는 방향을 설명하는 간결한 WHAT WE BUILD 영역을 추가했습니다.
+
+### src/app/page.tsx, src/app/page.module.css
+
+- Home의 향후 제품 안내를 제품 카드와 구분되는 가벼운 보조 메시지로 변경했습니다.
+
+### src/components/Footer/Footer.module.css
+
+- 짧은 페이지에서 Footer 비중이 과도하지 않도록 데스크톱과 모바일 세로 여백을 축소했습니다.

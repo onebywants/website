@@ -1,10 +1,12 @@
 .hero,
+.whatWeBuild,
 .story,
 .values {
   background: #f8f8f4;
 }
 
 .heroInner,
+.whatWeBuildInner,
 .storyInner,
 .valuesInner {
   width: var(--content-width);
@@ -59,6 +61,41 @@
   gap: 0;
   min-height: 20.75rem;
   padding: 5rem 0;
+}
+
+.whatWeBuildInner {
+  display: grid;
+  grid-template-columns: 20.625rem minmax(0, 1fr);
+  gap: 0;
+  min-height: 14.5rem;
+  padding: 3.875rem 0;
+  border-top: 1px solid #e0e1de;
+}
+
+.whatWeBuildCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  max-width: 43.75rem;
+}
+
+.whatWeBuildCopy h2,
+.whatWeBuildCopy p {
+  margin: 0;
+}
+
+.whatWeBuildCopy h2 {
+  color: var(--color-navy);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.25;
+}
+
+.whatWeBuildCopy p {
+  color: var(--color-navigation);
+  font-size: 1.0625rem;
+  line-height: 1.65;
 }
 
 .storyCopy {
@@ -135,6 +172,10 @@
     grid-template-columns: 13rem minmax(0, 1fr);
   }
 
+  .whatWeBuildInner {
+    grid-template-columns: 13rem minmax(0, 1fr);
+  }
+
   .valueGrid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
@@ -142,6 +183,7 @@
 }
 
 @media (max-width: 40rem) {
+  .whatWeBuildInner,
   .storyInner {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -175,5 +217,14 @@
   .storyCopy h2 {
     font-size: 2rem;
     line-height: 1.2;
+  }
+
+  .whatWeBuildCopy h2 {
+    font-size: 1.75rem;
+  }
+
+  .whatWeBuildCopy p {
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
 }

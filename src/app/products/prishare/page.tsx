@@ -91,7 +91,30 @@ export default function PriSharePage() {
               upload-first behavior the default.
             </p>
           </div>
-          <div aria-hidden="true" className={styles.privacyAccent} />
+          <div className={styles.processingVisual}>
+            <div className={styles.processingVisualHeader}>
+              <img
+                alt=""
+                className={styles.processingSymbol}
+                src={`${basePath}/brand/prishare-symbol.svg`}
+              />
+              <p>HOW A SAFER COPY IS MADE</p>
+            </div>
+            <ol className={styles.processingSteps}>
+              <li>
+                <span>01</span>
+                <p>Find sensitive details in your photo.</p>
+              </li>
+              <li>
+                <span>02</span>
+                <p>Choose what to blur or redact.</p>
+              </li>
+              <li>
+                <span>03</span>
+                <p>Export a safer copy. Keep the original.</p>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
     </>

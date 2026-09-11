@@ -2,6 +2,8 @@ import Link from 'next/link';
 
 import styles from './page.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 export default function ProductsPage() {
   return <>
     <section className={styles.hero}>
@@ -19,11 +21,24 @@ export default function ProductsPage() {
         <div className={styles.divider} />
         <article className={styles.productRow}>
           <p className={styles.productNumber}>01</p>
+          <img
+            alt=""
+            className={styles.productMark}
+            src={`${basePath}/brand/prishare-mark.svg`}
+          />
           <div className={styles.productCopy}>
-            <h2>PriShare</h2>
+            <div className={styles.productTitle}>
+              <h2>PriShare</h2>
+              <span>In development</span>
+            </div>
             <p>
               Privacy-first photo sharing for everyday use. Detect sensitive areas on-device and share safer copies without changing the original.
             </p>
+            <ul className={styles.productMeta} aria-label="PriShare product details">
+              <li>Privacy</li>
+              <li>On-device</li>
+              <li>Android</li>
+            </ul>
           </div>
           <Link className={styles.productLink} href="/products/prishare">
             View PriShare&nbsp; →
@@ -36,6 +51,5 @@ export default function ProductsPage() {
         </div>
       </div>
     </section>
-    <div aria-hidden="true" className={styles.footerSpacer} />
   </>;
 }

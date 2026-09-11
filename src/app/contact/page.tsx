@@ -27,6 +27,5 @@ export default function ContactPage() {
         </p>
       </div>
     </section>
-    <div aria-hidden="true" className={styles.footerSpacer} />
   </>;
 }

@@ -18,6 +18,18 @@ export default function AboutPage() {
       </div>
     </section>
 
+    <section className={styles.whatWeBuild} aria-labelledby="what-we-build">
+      <div className={styles.whatWeBuildInner}>
+        <p className={styles.kicker} id="what-we-build">WHAT WE BUILD</p>
+        <div className={styles.whatWeBuildCopy}>
+          <h2>Small software for everyday moments.</h2>
+          <p>
+            Each product begins with one specific situation worth making simpler, safer, or easier to understand.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section className={styles.story} aria-labelledby="why-the-name">
       <div className={styles.storyInner}>
         <p className={styles.kicker} id="why-the-name">WHY THE NAME</p>

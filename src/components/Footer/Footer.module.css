@@ -1,6 +1,6 @@
 .footer {
   flex: none;
-  min-height: 16.75rem;
+  min-height: 13.5rem;
   background: var(--color-navy);
 }
 
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   width: var(--content-width);
-  min-height: 16.75rem;
+  min-height: 13.5rem;
   margin: 0 auto;
   min-width: 0;
 }
@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2.5rem;
-    padding: 3rem 0;
+    padding: 2.75rem 0;
   }
 }
 

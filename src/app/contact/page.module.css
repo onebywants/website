@@ -1,6 +1,5 @@
 .mainSection,
-.support,
-.footerSpacer {
+.support {
   background: #f8f8f4;
 }
 
@@ -14,8 +13,8 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) 28.75rem;
   gap: 3rem;
-  min-height: 27.0625rem;
-  padding: 6.875rem 3.5rem 7.5rem 0;
+  min-height: 23.5rem;
+  padding: 5.75rem 3.5rem 5.5rem 0;
 }
 
 .copy,
@@ -94,8 +93,8 @@
 
 .supportInner {
   gap: 1rem;
-  min-height: 17.875rem;
-  padding: 4.625rem 0 6.25rem;
+  min-height: 13.5rem;
+  padding: 3.75rem 0 4.5rem;
 }
 
 .support h2 {
@@ -113,10 +112,6 @@
   line-height: 1.75rem;
 }
 
-.footerSpacer {
-  height: 11.25rem;
-}
-
 @media (max-width: 48rem) {
   .mainInner {
     grid-template-columns: minmax(0, 1fr) 20rem;
@@ -128,9 +123,6 @@
     line-height: 1.1;
   }
 
-  .footerSpacer {
-    height: 8rem;
-  }
 }
 
 @media (max-width: 40rem) {

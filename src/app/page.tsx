@@ -78,13 +78,10 @@ export default function HomePage() {
                 src={`${basePath}/brand/prishare-mark.svg`}
               />
             </Link>
-            <div className={styles.moreProducts}>
+            <aside className={styles.moreProducts}>
               <p className={styles.moreProductsLabel}>MORE PRODUCTS IN PROGRESS</p>
-              <p>
-                New ideas are tested one by one. Only the useful ones become
-                products.
-              </p>
-            </div>
+              <p>More products will appear here as they are ready.</p>
+            </aside>
           </div>
         </div>
       </section>
