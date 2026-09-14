@@ -180,3 +180,9 @@
 ### .gitignore
 
 - 저장소 어디에서든 `node_modules/` 디렉터리가 추적되지 않도록 의존성 제외 패턴을 명시적으로 정리했습니다.
+
+## 2026-09-11 16:44
+
+### src/app/contact/page.tsx
+
+- Contact 이메일 주소와 mailto 링크를 `onebywants@gmail.com`으로 변경했습니다.
