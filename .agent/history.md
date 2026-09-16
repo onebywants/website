@@ -180,3 +180,23 @@
 ### src/app/contact/page.tsx
 
 - Contact 이메일 주소와 mailto 링크를 `onebywants@gmail.com`으로 변경했습니다.
+
+## 2026-09-14 10:57
+
+### src/app/favicon.ico
+
+- 기존 `onebywants-symbol.svg`를 기반으로 16·32·48px PNG 이미지를 포함한 favicon을 추가했습니다.
+- Next.js App Router의 파일 기반 메타데이터 규칙에 따라 사이트 favicon으로 자동 등록되도록 구성했습니다.
+
+## 2026-09-16 15:09
+
+### src/app/privacy/prishare/page.tsx
+
+- PriShare 개인정보처리방침의 한국어·영어 전체 내용을 공개 정적 페이지로 추가했습니다.
+- 사진의 기기 내 처리, Google AdMob, Google Play Billing, 보관·삭제 및 문의 정보를 양 언어로 동일하게 안내했습니다.
+- Google 개인정보처리방침 링크와 기존 프로젝트에 정의된 `onebywants@gmail.com` 연락처를 연결했습니다.
+
+### src/app/privacy/prishare/page.module.css
+
+- 기존 사이트의 콘텐츠 폭, 색상, 타이포그래피 토큰을 사용해 문서 페이지 레이아웃을 구성했습니다.
+- 한국어·영어 섹션 구분과 모바일 화면용 반응형 간격 및 글자 크기를 추가했습니다.
