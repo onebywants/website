@@ -143,6 +143,43 @@
   font-style: normal;
 }
 
+.tableWrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.tableWrapper:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+}
+
+.policyTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.policyTable th,
+.policyTable td {
+  min-width: 10rem;
+  padding: 1rem;
+  border: 1px solid #e0e1de;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.policyTable thead th {
+  background: var(--color-surface);
+  color: var(--color-navy);
+}
+
+.policyTable tbody th {
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
 @media (max-width: 48rem) {
   .page {
     padding: 4.5rem 0 5.5rem;
