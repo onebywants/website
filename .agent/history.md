@@ -186,3 +186,45 @@
 ### src/app/contact/page.tsx
 
 - Contact 이메일 주소와 mailto 링크를 `onebywants@gmail.com`으로 변경했습니다.
+
+## 2026-09-14 10:57
+
+### src/app/favicon.ico
+
+- 기존 `onebywants-symbol.svg`를 기반으로 16·32·48px PNG 이미지를 포함한 favicon을 추가했습니다.
+- Next.js App Router의 파일 기반 메타데이터 규칙에 따라 사이트 favicon으로 자동 등록되도록 구성했습니다.
+
+## 2026-09-16 15:09
+
+### src/app/privacy/prishare/page.tsx
+
+- PriShare 개인정보처리방침의 한국어·영어 전체 내용을 공개 정적 페이지로 추가했습니다.
+- 사진의 기기 내 처리, Google AdMob, Google Play Billing, 보관·삭제 및 문의 정보를 양 언어로 동일하게 안내했습니다.
+- Google 개인정보처리방침 링크와 기존 프로젝트에 정의된 `onebywants@gmail.com` 연락처를 연결했습니다.
+
+### src/app/privacy/prishare/page.module.css
+
+- 기존 사이트의 콘텐츠 폭, 색상, 타이포그래피 토큰을 사용해 문서 페이지 레이아웃을 구성했습니다.
+- 한국어·영어 섹션 구분과 모바일 화면용 반응형 간격 및 글자 크기를 추가했습니다.
+
+## 2026-10-08 16:01
+
+### src/app/privacy/prishare/page.tsx
+
+- 한국어·영어 방침에 Firebase Analytics·Crashlytics의 처리 정보와 ML Kit·Gemini Nano의 기기 내 처리 및 SDK 진단 데이터 설명을 추가했습니다.
+- 광고 개인정보 선택, 분석·오류 보고 기본 꺼짐 및 개별 수집 제어, 기존 전송 데이터 삭제와 ML Kit 진단 처리의 제한 사항을 안내했습니다.
+- 외부 서비스 목록, 사용자 요청에 따른 이미지 공유, Android 설정 백업·복원, 외부 서비스 정보 보관·삭제 및 Pro 광고 문구를 보완했습니다.
+- 시행일을 2026년 10월 8일로 갱신하고 양 언어의 섹션 번호를 1~15로 정리했으며 Firebase·ML Kit 공식 안내 링크를 추가했습니다.
+
+## 2026-10-10 00:15
+
+### src/app/privacy/prishare/page.tsx
+
+- 제공된 2026년 10월 10일자 한국어·영어 원문으로 개인정보처리방침 전체를 교체하고 시행일과 각 14개 항목을 반영했습니다.
+- 외부 서비스 제공자·처리위탁, 국외 처리, 구체적 보관·삭제 기준, 이용자 권리, 개인정보 보호책임자 및 아동 관련 내용을 원문대로 반영했습니다.
+- 서비스 및 보관기간 표를 행·열 제목이 있는 HTML 표로 구현하고 모든 참고 링크와 언어별 lang 속성을 적용했습니다.
+
+### src/app/privacy/prishare/page.module.css
+
+- 기존 색상과 간격을 사용한 정책 표 스타일을 추가했습니다.
+- 좁은 화면에서 표 영역 내 가로 스크롤을 지원하고 키보드 포커스 표시를 추가했습니다.
