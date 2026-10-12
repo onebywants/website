@@ -197,7 +197,7 @@ export default function PriSharePrivacyPolicyPage() {
 
             <h3 id="ko-section-14">{"14. 개인정보 보호책임자 및 방침 변경"}</h3>
 
-            <p>{"개인정보 보호책임자: 우제경"}<br />{"담당: OneByWants / PriShare 운영"}<br />{"이메일: onebywants@gmail.com"}</p>
+            <p>{"개인정보 보호책임자: 우제경"}<br />{"담당: OneByWants / PriShare 운영"}<br />{"이메일: onebywants@gmail.com"}<br />전화번호: <a href="tel:07080952624">070-8095-2624</a></p>
 
             <p>{"개인정보 처리에 관한 문의·불만 및 권리 행사 요청은 위 이메일로 접수합니다."}</p>
 
