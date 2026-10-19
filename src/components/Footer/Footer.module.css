@@ -12,6 +12,8 @@
   min-height: 13.5rem;
   margin: 0 auto;
   min-width: 0;
+  gap: 2.5rem;
+  padding: 2.75rem 0;
 }
 
 .brand {
@@ -34,6 +36,22 @@
 .copyright {
   color: var(--color-footer-muted);
   font-size: 0.8125rem;
+}
+
+.businessInfo {
+  margin: 0.75rem 0;
+  color: var(--color-footer-muted);
+  font-size: 0.8125rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.businessInfo p {
+  margin: 0;
+}
+
+.businessInfo a:hover {
+  color: #ffffff;
 }
 
 .navigation {

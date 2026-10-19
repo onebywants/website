@@ -14,6 +14,13 @@ export function Footer() {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <p className={styles.tagline}>One want at a time.</p>
+          <div className={styles.businessInfo}>
+            <p>회사명 : 원바이원츠</p>
+            <p>사업자등록번호 : 697-04-03885</p>
+            <p>통신판매업신고 : 제2026-서울강동-1648</p>
+            <p>이메일 : <a href="mailto:onebywants@gmail.com">onebywants@gmail.com</a></p>
+            <p>대표자 : 우제경</p>
+          </div>
           <p className={styles.copyright}>© OneByWants</p>
         </div>
         <nav aria-label="푸터 메뉴">
